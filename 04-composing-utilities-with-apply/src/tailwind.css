@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 @layer components {
-    .btn {
-        @apply uppercase bg-indigo-500 text-white px-5 py-3
-      hover:bg-indigo-400 sm:hover:bg-green-500 sm:hover:text-3xl 
-        hover:-translate-y-0.5 transform transition
-        focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500
-        focus:ring-opacity-50 active:bg-indigo-600 
-        inline-block rounded-lg drop-shadow-lg font-semibold text-sm
-        tracking-wider sm:text-base
-    }
+  .btn {
+      @apply uppercase inline-block px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2
+      font-semibold text-sm tracking-wider sm:text-base;
+  }
+  .btn-primary {
+      @apply bg-indigo-500 text-white hover:bg-indigo-400 sm:hover:bg-green-500 
+      sm:hover:text-3xl focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600;
+  }
+  .btn-secondary {
+      @apply bg-gray-300 text-gray-800 hover:bg-gray-200 sm:hover:bg-gray-500
+      sm:hover:text-3xl focus:ring-gray-300 focus:ring-opacity-50 active:bg-gray-400;
+  }
 }

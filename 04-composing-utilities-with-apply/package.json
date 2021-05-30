@@ -1,5 +1,5 @@
 {
-  "name": "01-first-workflow",
+  "name": "04-composing-utilities-with-apply",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
